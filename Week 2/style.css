@@ -1,0 +1,151 @@
+*{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+body{
+    height:100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav{
+    
+    display: flex;
+    float: right;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li{
+    text-align: center;
+    padding: 0 10px;
+}
+
+img{
+    height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+    display: block;
+}
+
+h6{
+    color: rgba(0, 0, 0, 0.87);
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    float: right;
+}
+
+h6:hover{
+    text-decoration: underline;
+} 
+
+
+#logo img{
+    max-width: 250px;
+    max-height: 500px;
+    padding-top: 20px;
+}
+
+section{
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form{
+    position: relative;
+}
+
+input{
+    width: 600px;
+    height: 40px;
+    padding-left: 40px;
+    border-radius: 45px;
+    border:0.5px solid;
+    color: lightgray;
+}
+
+input:focus{
+    outline: none;
+}
+
+#search-icon{
+    position: absolute;
+    left: 5px;
+    top: 6px;
+}
+
+
+#keyboard-icon{
+    position: absolute;
+    right: 80px;
+    top: 6px;
+}
+
+#micro-icon{
+    position: absolute;
+    right: 45px;
+    top: 6px;
+}
+
+#len-icon{
+    position: absolute;
+    right: 12px;
+    top: 6px;
+}
+
+.button{
+    width: 350px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button{
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    border:none;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 0 16px;
+}
+
+button:hover{
+    border:0.5px solid #eee;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    color: #70757a;
+    background-color: #f2f2f2;
+}
+
+#country{
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 15px 15px 20px;
+}
+
+#more{
+    height: 50px;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+#more li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
