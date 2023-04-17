@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  justify-content: space-between;
+}
+
+#navbar{
+  display: flex; /*linh hoat theo 1 truc nao do*/
+  justify-content: flex-end;       /*can chinh vi tri so voi truc axis, (cho xuong cuoi)*/
+  position: fixed;  /*nav stay still when scroll down  */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #be3144;
+  z-index: 10;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 23px;
+    font-family: "Poppins", sans-serif;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+  }
+}
+
+.nav-list a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 20px 25px 20px 25px;
+}
+
+.nav-list a:hover{
+  background: #45567d;
+}
+
+/* li{
+  padding-right: 40px;
+} */
+
+#welcome-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+#welcome-section h1{
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: white
+}
+
+#welcome-section h2{
+  font-size: 27px;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: #be3144;
+  font-style: italic;
+  font-weight: 200;
+}
+
+#projects{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #45567d;
+}
+
+#projects h2{
+  color: white;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 400px;
+  font-size: 40px;
+}
+
+/*----------------------------------*/
+#projects{
+  text-align: center;
+  padding: 10rem 2rem 30rem 2rem;
+  background: #45567d;
+}
+
+/* .projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+} */
+
+@media (max-width: 28.75em) {
+  #projects h1 {
+    font-size: 4rem;
+  }
+}
+
+/* "Automagic" image grid using no media queries */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  /* margin-bottom: 12rem; */
+}
+
+@media (max-width: 30.625em) {
+  #projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  border-bottom: 500px;
+}
+
+.code {
+  color: var(--main-gray);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: #ff7f50;
+}
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: var(--main-gray);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--main-red);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+/*----------------------------------*/
+
+/* #contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #303841;
+  color: white;
+  margin-top: 500px;
+} */
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: #303841;
+  color: white;
+  
+}
+
+.contact-section-header > h2 {
+  font-size: 3.5rem;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 28.75em) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-section-header > p {
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: #303841;
+  border-top: 4px solid #be3144;
+}
+
+footer > p {
+  margin: 2rem;
+  color:white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
