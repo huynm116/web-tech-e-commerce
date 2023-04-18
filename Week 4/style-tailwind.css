@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.school, #school-img{
+    width: 400px;
+    transition: .2s ease;
+    border-radius: 5% 5% 0 0;
+    overflow: hidden;
+}
+
+.school:hover #school-img{
+    transform: scale(1.1);
+    filter: brightness(105%);
+}
+
+#avatar-img{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    border-color: white;
+    border-width: 5px;
+    padding-top: 0;
+    border-radius: 50%;
+} 
+
+.content-top-left__user-avatar{
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-top-left__user-infos,  .content-top-left__user-scores{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-size: 15px;
+}
+
+.content-top-left-upper, .content-top-left-lower{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5% 5% 5% 5%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+span{
+    color: #009688;
+    font-weight: bold;
+}
+
+.content-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabContainer{
+    width: 100%;
+    /* height: 100px; */
+}
+
+.tabContainer .buttonContainer{
+    height: 50px;
+    display: flex;
+    justify-content: start;
+}
+
+.tabContainer .buttonContainer button{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e4e7ed;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.tabContainer .buttonContainer button:hover{
+    color: #409eff;
+}
