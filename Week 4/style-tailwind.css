@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body{
+    position: fixed;
+    top: 5%;
+    left: 8%;
+}
+
 .school, #school-img{
     width: 400px;
     transition: .2s ease;
@@ -39,6 +45,11 @@
     font-size: 15px;
 }
 
+.content-top-left__user-scores{
+    padding-top:15px;
+    padding-right: 20p;
+}
+
 .content-top-left-upper, .content-top-left-lower{
     margin-top: 10px;
     margin-left: 10px;
@@ -56,18 +67,18 @@ span{
 }
 
 .tabContainer{
-    width: 100%;
-    /* height: 100px; */
+    width: 90%;
 }
 
 .tabContainer .buttonContainer{
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: start;
+    margin-bottom: 15px;
 }
 
 .tabContainer .buttonContainer button{
-    width: 100%;
+    width: 100px;
     height: 100%;
     border: 1px solid #e4e7ed;
     outline: none;
@@ -76,9 +87,70 @@ span{
     font-weight: 500;
     color: #333;
     transition: all 0.3s ease;
-    box-sizing: border-box;
+    padding: 0 10px 0 10px;
 }
 
 .tabContainer .buttonContainer button:hover{
     color: #409eff;
+}
+
+#extra{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #e4e7ed;
+}
+
+#trang-thai{
+    border-radius: 6px 0 0 0;
+}
+
+#quan-ly{
+    border-radius: 0 6px 0 0;
+}
+
+.content-top-right{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 3% 3% 3% 3%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;   
+}
+
+
+.tabContainer2{
+    width: 90%;
+    margin: 20px 0 0 20px;
+}
+
+.tabContainer2 .buttonContainer2{
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+
+.tabContainer2 .buttonContainer2 button{
+    /* width: 100%; */
+    height: 100%;
+    border: 1px solid #e4e7ed;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+    padding: 0 20px 0 20px; 
+}
+
+.tabContainer2 .buttonContainer2 button:hover{
+    color: #409eff;
+}
+
+#ly-lich{
+    border-radius: 6px 0 0 0;
+}
+
+#hoat-dong{
+    padding: 0 10px 0 10px;
+    border-radius: 0 6px 0 0; 
 }

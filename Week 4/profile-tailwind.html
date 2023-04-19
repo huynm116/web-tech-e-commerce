@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="./style-tailwind.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <section class="content-top">
         <div class="grid grid-cols-3 gap-4">
@@ -11,10 +13,14 @@
                 <div class="content-top-left-upper">
                     <div class="content-top-left__user-avatar">
                         <div class="school">
-                            <img id="school-img" src="https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-6.png?fbclid=IwAR0lglhr6oJ5eQSRpGiweKiOS5ufU-k5ZFFVUu3MSm247pY_DVaq9Ef6m58" alt="School picture">
+                            <img id="school-img"
+                                src="https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-6.png?fbclid=IwAR0lglhr6oJ5eQSRpGiweKiOS5ufU-k5ZFFVUu3MSm247pY_DVaq9Ef6m58"
+                                alt="School picture">
                         </div>
                         <div class="avatar">
-                            <img id="avatar-img"src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Avatar picture">
+                            <img id="avatar-img"
+                                src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                                alt="Avatar picture">
                         </div>
                     </div>
                     <div class="content-top-left__user-infos">
@@ -25,23 +31,28 @@
                         <p class="content-top-left__user-info">Email cá nhân: huynguyenminh.1106@gmail.com</p>
                     </div>
                 </div>
-                
+
                 <div class="content-top-left-lower">
                     <div class="content-top-left__user-scores">
-                        <div class="tabContainer">  
+                        <div class="tabContainer">
                             <div class="buttonContainer">
-                                <button onclick="showPanel(0, 'white')">Trạng thái</button>
-                                <button onclick="showPanel(1, 'white')">Quản lý</button>
-                                <button onclick="showPanel(2, 'green')">-</button>
-                                <button onclick="showPanel(3, 'grey')">-</button>
+                                <button id="trang-thai" onclick="showPanel(0, 'white')">Trạng thái</button>
+                                <button id="quan-ly" onclick="showPanel(1, 'white')">Quản lý</button>
+                                <button id="extra"></button>
+                                <button id="extra"></button>
                             </div>
                             <div class="tabPanel">
-                            <p class="content-top-left__user-score">Trạng thái học tập: <span>Học</span></p>
-                            <p class="content-top-left__user-score">CPA: 3.4</p>
-                            <p class="content-top-left__user-score">Nợ: 0 TC</p>
-                            <p class="content-top-left__user-score">Tích lũy: 100 TC</p>
-                            <p class="content-top-left__user-score">Mức cảnh cáo: M0</p>
-                            <p class="content-top-left__user-score">Trình độ: 3</p>
+                                <p class="content-top-left__user-score">Trạng thái học tập: <span>Học</span></p>
+                                <p class="content-top-left__user-score">CPA: 3.4</p>
+                                <p class="content-top-left__user-score">Nợ: 0 TC</p>
+                                <p class="content-top-left__user-score">Tích lũy: 100 TC</p>
+                                <p class="content-top-left__user-score">Mức cảnh cáo: M0</p>
+                                <p class="content-top-left__user-score">Trình độ: 3</p>
+                            </div>
+                            <div class="tabPanel">
+                                <p class="content-top-left__user-score">GVCN: trung.buiquoc@hust.edu.vn</p>
+                                <p class="content-top-left__user-score">Viện: Trường Công nghệ Thông tin và Truyền thông
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -50,114 +61,103 @@
 
             </div>
             <div class="col-span-2 ... content-top-right">
-                <div class="btn-group">
-                    <span>
-                        <button onclick="ShowPersonalInfo()" id="ly-lich" class="btn" style="width: 10%; color:#409eff; border-radius:6px 0 0 0; border-bottom: none;">Lý lịch</button>
-                        <button onclick="HidePersonalInfo()" class="btn" style="width:15%;">Quyết định</button>
-                        <button onclick="HidePersonalInfo()" class="btn" style="width:15%;">Khen thưởng</button>
-                        <button onclick="HidePersonalInfo()" class="btn" style="width:15%;">Liên hệ</button>
-                        <button onclick="HidePersonalInfo()" class="btn" style="width:15%;">Nhận xét</button>
-                        <button onclick="HidePersonalInfo()" class="btn" style="width:20%;">Hoạt động tham gia</button>
-                    </span>
-                    <span>
-                        <button style="width: 10%; color: white; border-right: none; border-left: none; border-top: none; cursor:default;">-</button>
-                    </span>
-                </div>
-                <div class="info-group">
-                    <div class="personal-info">
-                        <h2>Thông tin cá nhân</h2>
-                        <div class="grid grid-cols-3 gap-0">
-                            <div class="...">
-                                Ngày sinh:<br>
-                                Số CMND:<br>
-                                Dân tộc:<br>
-                                Ngày vào Đoàn: <br>
-                            </div>
-                            <div class="...">
-                                Nơi sinh:<br>
-                                Nơi cấp:<br>
-                                Tôn giáo: <br>
-                                Ngày vào Đảng: 
-                            </div>
-                            <div class="...">
-                                Giới tính: Nam<br>
-                                Ngày cấp:<br>
-                                Chi đoàn:<br>
-                                Đoàn viên
-                            </div>
-                            <div class="col-span-3">
-                                Đối tượng chính sách:<br>
-                                Số thẻ bảo hiểm:3143112512523<br>
-                                Địa chỉ thường trú: 11/11/111 đường ABC, phường DEF<br>
-                                Nơi ở hiện tại: 11/11/111 đường ABC, phường DEF, quận Hoàng Mike, Hà Nội
-                            </div>
-                          </div>
+                <div class="tabContainer2">
+                    <div class="buttonContainer2">
+                        <button id="ly-lich" onclick="showPanel2(0, 'white')">Lý lịch</button>
+                        <button onclick="showPanel2(1, 'white')">Quyết định</button>
+                        <button onclick="showPanel2(2, 'white')">Khen thưởng</button>
+                        <button onclick="showPanel2(3, 'white')">Liên hệ</button>
+                        <button onclick="showPanel2(4, 'white')">Nhận xét</button>
+                        <button id="hoat-dong" onclick="showPanel2(5, 'white')">Hoạt động tham gia</button>
+                        <button id="extra"></button>
+                        <button id="extra"></button>
                     </div>
+                    <div class="tabPanel2">
+                        <div class="personal-info">
+                            <h2>Thông tin cá nhân</h2>
+                            <div class="grid grid-cols-3 gap-0">
+                                <div class="...">
+                                    Ngày sinh:<br>
+                                    Số CMND:<br>
+                                    Dân tộc:<br>
+                                    Ngày vào Đoàn: <br>
+                                </div>
+                                <div class="...">
+                                    Nơi sinh:<br>
+                                    Nơi cấp:<br>
+                                    Tôn giáo: <br>
+                                    Ngày vào Đảng:
+                                </div>
+                                <div class="...">
+                                    Giới tính: Nam<br>
+                                    Ngày cấp:<br>
+                                    Chi đoàn:<br>
+                                    Đoàn viên
+                                </div>
+                                <div class="col-span-3">
+                                    Đối tượng chính sách:<br>
+                                    Số thẻ bảo hiểm:3143112512523<br>
+                                    Địa chỉ thường trú: 11/11/111 đường ABC, phường DEF<br>
+                                    Nơi ở hiện tại: 11/11/111 đường ABC, phường DEF, quận Hoàng Mike, Hà Nội
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="family-info">
-                        <h2>Thông tin gia đình</h2>
-                        <div class="father grid grid-cols-3 gap-0">
-                            <h3>Họ và tên cha: </h3>
-                            <div class="...">
-                                Dân tộc:<br>
-                                Nơi làm việc:
+                        <div class="family-info">
+                            <h2>Thông tin gia đình</h2>
+                            <div class="father grid grid-cols-3 gap-0">
+                                <h3>Họ và tên cha: </h3>
+                                <div class="...">
+                                    Dân tộc:<br>
+                                    Nơi làm việc:
+                                </div>
+                                <div class="...">
+                                    Năm sinh:<br>
+                                    Tôn giáo:
+                                </div>
+                                <div class="...">
+                                    Quốc tịch: KINH<br>
+                                    Nghề nghiệp:
+                                </div>
+                                <div class="col-span-3">
+                                    Địa chỉ thường trú:<br>
+                                    Liên hệ:
+                                </div>
                             </div>
-                            <div class="...">
-                                Năm sinh:<br>
-                                Tôn giáo: 
+                            <div class="mother grid grid-cols-3 gap-0">
+                                <h3>Họ và tên mẹ: </h3>
+                                <div class="...">
+                                    Dân tộc:<br>
+                                    Nơi làm việc:
+                                </div>
+                                <div class="...">
+                                    Năm sinh:<br>
+                                    Tôn giáo:
+                                </div>
+                                <div class="...">
+                                    Quốc tịch: KINH<br>
+                                    Nghề nghiệp:
+                                </div>
+                                <div class="col-span-3">
+                                    Địa chỉ thường trú:<br>
+                                    Liên hệ:
+                                </div>
                             </div>
-                            <div class="...">
-                                Quốc tịch: KINH<br>
-                                Nghề nghiệp:
-                            </div>
-                            <div class="col-span-3">
-                                Địa chỉ thường trú:<br>
-                                Liên hệ: 
+                            <h3>Thông tin người thân khác:</h3>
+                            <div class="grid grid-cols-2">
+                                <div class="...">
+                                    <h3>Thuộc hộ</h3>
+                                </div>
+                                <div class="...">
+                                    <h3>Số sổ:</h3>
+                                </div>
                             </div>
                         </div>
-                        <div class="mother grid grid-cols-3 gap-0">
-                            <h3>Họ và tên mẹ: </h3>
-                            <div class="...">
-                                Dân tộc:<br>
-                                Nơi làm việc:
-                            </div>
-                            <div class="...">
-                                Năm sinh:<br>
-                                Tôn giáo: 
-                            </div>
-                            <div class="...">
-                                Quốc tịch: KINH<br>
-                                Nghề nghiệp:
-                            </div>
-                            <div class="col-span-3">
-                                Địa chỉ thường trú:<br>
-                                Liên hệ: 
-                            </div>
-                        </div>
-                        <h3>Thông tin người thân khác:</h3>
-                        <div class="grid grid-cols-2">
-                            <div class="..."><h3>Thuộc hộ</h3></div>
-                            <div class="..."><h3>Số sổ:</h3></div>
-                          </div>
+                    </div>
                 </div>
-
-
-
-                
-                <!-- <div class="content-top-right__menus">
-                        <p class="content-top-right__menu">Lý lịch</p>
-                        <p class="content-top-right__menu">Quyết định</p>
-                        <p class="content-top-right__menu">Khen thưởng</p>
-                        <p class="content-top-right__menu">Liên hệ</p>
-                        <p class="content-top-right__menu">Nhận xét</p>
-                        <p class="content-top-right__menu">Hoạt động tham gia</p>
-                </div> -->
             </div>
-          </div> 
     </section>
-    
+
     <script src="index-tailwind.js"></script>
-    
+
 </body>
-
-
