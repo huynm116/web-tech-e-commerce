@@ -1,54 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="./style.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <section class="content-top">
-        <div class="content-top-left">
-            <div class="content-top-left__user-avatar">
-                <img src="https://dean2020.edu.vn/wp-content/uploads/2019/06/hinh-6.png?fbclid=IwAR0lglhr6oJ5eQSRpGiweKiOS5ufU-k5ZFFVUu3MSm247pY_DVaq9Ef6m58" alt="School picture" class="school">
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" class="avatar">
-            </div>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="... content-top-left">
+                <div class="content-top-left-upper">
+                    <div class="content-top-left__user-avatar">
+                        <div class="school">
+                            <img id="school-img"
+                                src="./school.png"
+                                alt="School picture">
+                        </div>
+                        <div class="avatar">
+                            <img id="avatar-img"
+                                src="./ava.jpg"
+                                alt="Avatar picture">
+                        </div>
+                    </div>
+                    <div class="content-top-left__user-infos">
+                        <p class="content-top-left__user-info">MSSV: 20205158</p>
+                        <p class="content-top-left__user-info">Họ và tên: Nguyễn Minh Huy</p>
+                        <p class="content-top-left__user-info">Lớp: ICT 02-K65</p>
+                        <p class="content-top-left__user-info">Email: huy.nm205158@sis.hust.edu.vn</p>
+                        <p class="content-top-left__user-info">Email cá nhân: huynguyenminh.1106@gmail.com</p>
+                    </div>
+                </div>
 
-            <div class="content-top-left__user-infos">
-                <p class="content-top-left__user-info">MSSV: 20205158</p>
-                <p class="content-top-left__user-info">Họ và tên: Nguyễn Minh Huy</p>
-                <p class="content-top-left__user-info">Lớp: ICT 02-K65</p>
-                <p class="content-top-left__user-info">Email: huy.nm205158@sis.hust.edu.vn</p>
-                <p class="content-top-left__user-info">Email cá nhân: babicoolhp@gmail.com</p>
-            </div>
+                <div class="content-top-left-lower">
+                    <div class="content-top-left__user-scores">
+                        <div class="tabContainer">
+                            <div class="buttonContainer">
+                                <button id="trang-thai" onclick="showPanel(0, 'white')">Trạng thái</button>
+                                <button id="quan-ly" onclick="hidePanel(1)">Quản lý</button>
+                                <button id="extra"></button>
+                                <button id="extra"></button>
+                            </div>
+                            <div class="tabPanel">
+                                <p class="content-top-left__user-score">Trạng thái học tập: <span>Học</span></p>
+                                <p class="content-top-left__user-score">CPA: 3.49</p>
+                                <p class="content-top-left__user-score">Nợ: 0 TC</p>
+                                <p class="content-top-left__user-score">Tích lũy: 100 TC</p>
+                                <p class="content-top-left__user-score">Mức cảnh cáo: M0</p>
+                                <p class="content-top-left__user-score">Trình độ: 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="content-top-left__user-scores">
-                <p class="content-top-left__user-score">Trạng thái học tập: <span>Học</span></p>
-                <p class="content-top-left__user-score">CPA: 3.4</p>
-                <p class="content-top-left__user-score">Nợ: 0 TC</p>
-                <p class="content-top-left__user-score">Tích lũy: 100 TC</p>
-                <p class="content-top-left__user-score">Mức cảnh cáo: M0</p>
-                <p class="content-top-left__user-score">Trình độ: 3</p>
-            </div>
-        </div> 
 
-        <div class="content-top-right">
-            <div class="content-top-right__menus">
-                <p class="content-top-right__menu">Lý lịch
-                </p>
-                <p class="content-top-right__menu">Quyết định</p>
-                <p class="content-top-right__menu">Khen thưởng</p>
-                <p class="content-top-right__menu">Liên hệ</p>
-                <p class="content-top-right__menu">Nhận xét</p>
-                <p class="content-top-right__menu">Hoạt động tham gia</p>
             </div>
-        </div>
+            <div class="col-span-2 ... content-top-right">
+                <div class="tabContainer2">
+                    <div class="buttonContainer2">
+                        <button id="ly-lich" onclick="showPanel2(0, 'white')">Lý lịch</button>
+                        <button onclick="showPanel2(1, 'white')">Quyết định</button>
+                        <button onclick="showPanel2(2, 'white')">Khen thưởng</button>
+                        <button onclick="showPanel2(3, 'white')">Liên hệ</button>
+                        <button onclick="showPanel2(4, 'white')">Nhận xét</button>
+                        <button id="hoat-dong" onclick="showPanel2(5, 'white')">Hoạt động tham gia</button>
+                        <button id="extra"></button>
+                        <button id="extra"></button>
+                        <button id="extra"></button>
+                        <button id="extra"></button>
+                    </div>
+                    <div class="tabPanel2">
+                        <div class="personal-info">
+                            <h2>Thông tin cá nhân</h2>
+                            <div class="grid grid-cols-3 gap-0 indent">
+                                <div class="... ">
+                                    Ngày sinh: 20/11/2002<br>
+                                    Số CMND: 0330154116<br>
+                                    Dân tộc: KINH<br>
+                                    Ngày vào Đoàn: 26/3/2019<br>
+                                </div>
+                                <div class="...">
+                                    Nơi sinh: London<br>
+                                    Nơi cấp: Hải Phòng<br>
+                                    Tôn giáo: Không<br>
+                                    Ngày vào Đảng:
+                                </div>
+                                <div class="...">
+                                    Giới tính: Nam<br>
+                                    Ngày cấp:<br>
+                                    Chi đoàn:<br>
+                                    Đoàn viên
+                                </div>
+                                <div class="col-span-3">
+                                    Đối tượng chính sách: Không<br>
+                                    Số thẻ bảo hiểm: 3143112512523<br>
+                                    Địa chỉ thường trú: 12 đường Trần Phú, quận Lê Chân, Hà Nội<br>
+                                    Nơi ở hiện tại: 1A Lê Hồng Phong, phường Đằng Hải, quận Hải An, Hải Phòng
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="family-info">
+                            <h2>Thông tin gia đình</h2>
+                                <h3 class="indent">Họ và tên cha: NGUYỄN VĂN A</h3>
+                                <div class="indent grid grid-cols-3 gap-0">
+                                <div class="...">
+                                    Dân tộc: KINH<br>
+                                    Nơi làm việc: HẢI PHÒNG
+                                </div>
+                                <div class="...">
+                                    Năm sinh: 1965<br>
+                                    Tôn giáo: KHÔNG
+                                </div>
+                                <div class="...">
+                                    Quốc tịch: VIỆT NAM<br>
+                                    Nghề nghiệp: TỰ DO
+                                </div>
+                                <div class="col-span-3">
+                                    Địa chỉ thường trú: HẢI PHÒNG<br>
+                                    Liên hệ: 
+                                </div>
+                            </div>
+                                <h3 class="indent">Họ và tên mẹ: NGUYỄN THỊ B</h3>
+                                <div class="indent grid grid-cols-3 gap-0">
+                                <div class="...">
+                                    Dân tộc: KINH<br>
+                                    Nơi làm việc: HẢI PHÒNG
+                                </div>
+                                <div class="...">
+                                    Năm sinh: 1966<br>
+                                    Tôn giáo: KHÔNG
+                                </div>
+                                <div class="...">
+                                    Quốc tịch: VIỆT NAM<br>
+                                    Nghề nghiệp: TỰ DO
+                                </div>
+                                <div class="col-span-3">
+                                    Địa chỉ thường trú: HẢI PHÒNG<br>
+                                    Liên hệ:
+                                </div>
+                            </div>
+                            <h3 class="indent" id="thong-tin-nguoi-than">Thông tin người thân khác:</h3>
+                            <div class="grid grid-cols-2">
+                                <div class="...">
+                                    <h3 class="indent">Thuộc hộ</h3>
+                                </div>
+                                <div class="...">
+                                    <h3>Số sổ:</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
-    
+    <section class="content-bottom">
+        <div class="grid grid-cols-2 gap-0">
+            <div class="...">
+                <h2>Biểu đồ học tập</h2>
+                <img src="./bieu-do-hoc-tap.png" alt="hoc tap">
+            </div>
+            <div class="...">
+                <h2>Biểu đồ rèn luyện</h2>
+                <img src="./bieu-do-drl.png" alt="ren luyen">
+            </div>
+    </section>
+    <script src="index.js"></script>
 
-    <div class="grid grid-cols-3 gap-4">
-        <div class="...">06</div>
-        <div class="col-span-2 ...">07</div>
-      </div>
-    
 </body>
-
-
+</html>
