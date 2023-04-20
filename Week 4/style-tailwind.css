@@ -3,8 +3,10 @@
     padding: 0;
 }
 
+html { overflow-y: scroll; }
+
 body{
-    position: fixed;
+    position: absolute;
     top: 5%;
     left: 8%;
 }
@@ -46,8 +48,12 @@ body{
 }
 
 .content-top-left__user-scores{
-    padding-top:15px;
+    padding-top: 15px;
     padding-right: 20p;
+}
+
+.content-top-left__user-score{
+    padding-left: 8px;
 }
 
 .content-top-left-upper, .content-top-left-lower{
@@ -110,6 +116,8 @@ span{
 }
 
 .content-top-right{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
     margin-left: 10px;
     border-radius: 3% 3% 3% 3%;
@@ -118,7 +126,7 @@ span{
 
 
 .tabContainer2{
-    width: 90%;
+    width: 95%;
     margin: 20px 0 0 20px;
 }
 
@@ -153,4 +161,12 @@ span{
 #hoat-dong{
     padding: 0 10px 0 10px;
     border-radius: 0 6px 0 0; 
+}
+
+.family-info h2, .personal-info h2{
+    width: 160px;
+    font-family: "AT-Bold", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 2px solid #ddd;
 }
